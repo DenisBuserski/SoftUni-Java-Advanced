@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Stacks_And_Queues_Lab;
+package Stacks_And_Queues_Lab;
 
 import java.util.ArrayDeque;
 import java.util.Collections;
@@ -16,9 +16,10 @@ public class Math_Potato_07 {
 
         int cycle = 1;
         while (children.size() > 1) {
-            for (int i = 1; i < n; i++)
+            for (int i = 1; i < n; i++) {
                 children.offer(children.poll());
-
+            }
+            
             if (isPrime(cycle)) {
                 System.out.println("Prime " + children.peek());
             } else {
@@ -27,15 +28,13 @@ public class Math_Potato_07 {
 
             cycle++;
         }
+        
         System.out.println("Last is " + children.poll());
-
-
     }
 
     static boolean isPrime(int n) {
         if (n <= 1) {
             return false;
-
         }
         for (int i = 2; i < n; i++) {
             if (n % i == 0) {
@@ -44,6 +43,5 @@ public class Math_Potato_07 {
         }
         return true;
     }
-
 
 }
