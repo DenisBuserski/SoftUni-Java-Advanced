@@ -1,10 +1,9 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Stacks_And_Queues_Lab;
+package Stacks_And_Queues_Lab;
 
 import java.util.ArrayDeque;
 import java.util.Scanner;
 
 public class Browser_History_Upgrade_08 {
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -12,9 +11,7 @@ public class Browser_History_Upgrade_08 {
         ArrayDeque<String> forwardHistory = new ArrayDeque<>();
 
         String command;
-
         while (!"Home".equals(command = scanner.nextLine())) {
-
             if (command.equals("back")) {
                 if (browserHistory.size() < 2) {
                     System.out.println("no previous URLs");
@@ -35,8 +32,7 @@ public class Browser_History_Upgrade_08 {
                 browserHistory.push(command);
                 forwardHistory.clear();
             }
-
-
         }
+        
     }
 }
