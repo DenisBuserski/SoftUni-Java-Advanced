@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Stacks_And_Queues_Lab;
+package Stacks_And_Queues_Lab;
 
 import java.util.ArrayDeque;
 import java.util.Scanner;
@@ -32,5 +32,6 @@ public class Browser_History_01 {
 
             command = scanner.nextLine();
         }
+        
     }
 }
