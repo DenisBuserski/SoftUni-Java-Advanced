@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Stacks_And_Queues_Lab;
+package Stacks_And_Queues_Lab;
 
 import java.util.ArrayDeque;
 import java.util.Collections;
@@ -15,7 +15,6 @@ public class Hot_Potato_06 {
         Collections.addAll(children, names);
 
         while (children.size() > 1) {
-
             for (int pass = 1; pass < n; pass++) {
                 String currentChild = children.poll();
                 children.offer(currentChild);
@@ -24,8 +23,5 @@ public class Hot_Potato_06 {
         }
 
         System.out.println("Last is " + children.poll());
-
-
-
     }
 }
