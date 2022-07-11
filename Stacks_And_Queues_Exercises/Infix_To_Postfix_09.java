@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Stacks_And_Queues_Exercises;
+package Stacks_And_Queues_Exercises;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
@@ -18,8 +18,7 @@ public class Infix_To_Postfix_09 {
         for (String symbol : input) {
             if (Character.isDigit(symbol.charAt(0)) || Character.isLetter(symbol.charAt(0))) {
                 numbersQueue.offer(symbol);
-            }
-            else {
+            } else {
                 if (operatorStack.isEmpty()) {
                     operatorStack.push(symbol);
                 } else {
@@ -65,10 +64,7 @@ public class Infix_To_Postfix_09 {
         while (!operatorStack.isEmpty()) {
             System.out.print(operatorStack.pop() + " ");
         }
+        
         System.out.println();
-
-
-
-
     }
 }
