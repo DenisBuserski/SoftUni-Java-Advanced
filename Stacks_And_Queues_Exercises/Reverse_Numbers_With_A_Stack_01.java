@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Stacks_And_Queues_Exercises;
+package Stacks_And_Queues_Exercises;
 
 import java.util.ArrayDeque;
 import java.util.Scanner;
@@ -19,7 +19,5 @@ public class Reverse_Numbers_With_A_Stack_01 {
         while (!nums.isEmpty()) {
             System.out.print(nums.pop() + " ");
         }
-
-
     }
 }
