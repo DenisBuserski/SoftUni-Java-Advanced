@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Stacks_And_Queues_Exercises;
+package Stacks_And_Queues_Exercises;
 
 import java.util.ArrayDeque;
 import java.util.Collections;
@@ -14,7 +14,6 @@ public class Maximum_Element_03 {
 
         for (int count = 1; count <= n; count++) {
             String command = scanner.nextLine();
-
             if (command.equals("2")) {
                 stack.pop();
             } else if (command.equals("3")) {
@@ -25,14 +24,7 @@ public class Maximum_Element_03 {
                 int pushElement = Integer.parseInt(command.split(" ")[1]);
                 stack.push(pushElement);
             }
-
         }
-
-
-
-
-
-
 
     }
 }
