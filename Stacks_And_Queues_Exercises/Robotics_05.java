@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Stacks_And_Queues_Exercises;
+package Stacks_And_Queues_Exercises;
 
 import java.util.ArrayDeque;
 import java.util.LinkedHashMap;
@@ -29,16 +29,13 @@ public class Robotics_05 {
         while (!products.isEmpty()) {
             String currentProduct = products.poll();
             startTimeInSeconds++;
-
             decreaseWorkingTime(robotsWorkingTime);
-
             boolean isTaken = false;
 
             for (Map.Entry<String, Integer> robot : robotsWorkingTime.entrySet()) {
                 if (robot.getValue() == 0) {
                     System.out.println(robot.getKey() + " - " + currentProduct + " [" + getStartTime(startTimeInSeconds) + "]");
                     robotsWorkingTime.put(robot.getKey(), robots.get(robot.getKey()));
-
                     isTaken = true;
                     break;
                 }
@@ -46,10 +43,7 @@ public class Robotics_05 {
             if (!isTaken) {
                 products.offer(currentProduct);
             }
-
-
         }
-
 
     }
 
@@ -63,15 +57,11 @@ public class Robotics_05 {
 
     private static LinkedHashMap<String, Integer> getRobotsWorkingTimeMap(String[] robotsData) {
         LinkedHashMap<String, Integer> robots = new LinkedHashMap<>();
-
         for (String robotData : robotsData) {
             String robotName = robotData.split("-")[0];
-
             robots.put(robotName, 0);
         }
-
         return robots;
-
     }
 
     private static int getStartTimeInSeconds(String startTime) {
@@ -82,25 +72,20 @@ public class Robotics_05 {
     }
 
     private static String getStartTime(int startTimeInSeconds) {
-
         int hours = (startTimeInSeconds / 3600) % 24;
         int minutes = startTimeInSeconds % 3600 / 60;
         int seconds = startTimeInSeconds % 60;
-
-
         return String.format("%02d:%02d:%02d", hours, minutes, seconds);
     }
 
     private static LinkedHashMap<String, Integer> getRobotsMap(String[] robotsData) {
         LinkedHashMap<String, Integer> robots = new LinkedHashMap<>();
-
         for (String robotData : robotsData) {
             String robotName = robotData.split("-")[0];
             int processingTime = Integer.parseInt(robotData.split("-")[1]);
-
             robots.put(robotName, processingTime);
         }
-
         return robots;
     }
+    
 }
