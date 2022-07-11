@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Stacks_And_Queues_Exercises;
+package Stacks_And_Queues_Exercises;
 
 import java.util.ArrayDeque;
 import java.util.Scanner;
@@ -15,11 +15,9 @@ public class Balanced_Parentheses_06 {
 
         for (int index = 0; index < input.length(); index++) {
             char currentBracket = input.charAt(index);
-
             if (currentBracket == '(' || currentBracket == '{' || currentBracket == '[') {
                 openBrackets.push(currentBracket);
             } else if (currentBracket == ')' || currentBracket == '}' || currentBracket == ']') {
-
                 if (openBrackets.isEmpty()) {
                     areBalanced = false;
                     break;
