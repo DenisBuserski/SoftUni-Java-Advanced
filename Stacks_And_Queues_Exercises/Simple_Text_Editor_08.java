@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Stacks_And_Queues_Exercises;
+package Stacks_And_Queues_Exercises;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
@@ -9,13 +9,11 @@ public class Simple_Text_Editor_08 {
         Scanner scanner = new Scanner(System.in);
 
         int n = Integer.parseInt(scanner.nextLine());
-
         Deque<String> stack = new ArrayDeque<>();
         String text = "";
 
         for (int i = 0; i < n; i++) {
             String[] token = scanner.nextLine().split(" ");
-
             switch (token[0]) {
                 case "1":
                     stack.push(text);
@@ -35,8 +33,6 @@ public class Simple_Text_Editor_08 {
                     break;
             }
         }
-
-
 
     }
 }
