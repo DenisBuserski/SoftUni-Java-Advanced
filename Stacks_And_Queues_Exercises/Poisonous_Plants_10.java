@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Stacks_And_Queues_Exercises;
+package Stacks_And_Queues_Exercises;
 
 import java.util.ArrayDeque;
 import java.util.Arrays;
@@ -27,11 +27,12 @@ public class Poisonous_Plants_10 {
             }
             indexes.push(i);
         }
+        
         System.out.println(getLastDay(days));
-
     }
 
     private static int getLastDay(int[] days) {
         return Arrays.stream(days).filter(day -> day >= 0).max().orElse(0);
     }
+    
 }
