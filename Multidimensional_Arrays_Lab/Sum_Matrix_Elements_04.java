@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Multidimensional_Arrays_Lab;
+package Multidimensional_Arrays_Lab;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -20,10 +20,10 @@ public class Sum_Matrix_Elements_04 {
                 matrix[row][col] = Integer.parseInt(tokens[col]);
             }
         }
+        
         System.out.println(rows);
         System.out.println(cols);
         System.out.println(getElementsSum(matrix));
-
     }
 
     private static int getElementsSum(int[][] matrix) {
@@ -53,11 +53,9 @@ public class Sum_Matrix_Elements_04 {
         if (firstMatrix.length != secondMatrix.length) {
             return false;
         }
-
         for (int row = 0; row < firstMatrix.length; row++) {
             int[] firstArray = firstMatrix[row];
             int[] secondArray = secondMatrix[row];
-
             if (firstArray.length != secondArray.length) {
                 return false;
             }
@@ -68,7 +66,6 @@ public class Sum_Matrix_Elements_04 {
                 }
             }
         }
-
         return true;
     }
 
@@ -82,4 +79,3 @@ public class Sum_Matrix_Elements_04 {
     }
 
 }
-
