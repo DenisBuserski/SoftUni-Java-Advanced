@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Multidimensional_Arrays_Lab;
+package Multidimensional_Arrays_Lab;
 
 import java.util.*;
 
@@ -8,18 +8,15 @@ public class Find_The_Real_Queen_07 {
 
         int rows = 8;
         int cols = 8;
-
         char[][] chessTable = readMatrix(rows, cols, scanner);
 
         for (int row = 0; row < chessTable.length; row++) {
             for (int elem = 0; elem < chessTable[row].length; elem++) {
                 char currentElement = chessTable[row][elem];
-
                 if (currentElement == 'q') {
                     if (check(chessTable, row, elem)) {
                         System.out.print(row + " ");
                         System.out.print(elem);
-
                     }
                 }
             }
@@ -40,29 +37,28 @@ public class Find_The_Real_Queen_07 {
     }
 
     private static boolean check(char[][] chessTable, int row, int elem) {
-        for (int i = elem + 1; i < chessTable[row].length; i++) {         //RightHorizontal yes
+        for (int i = elem + 1; i < chessTable[row].length; i++) { // RightHorizontal yes
             char charToCheck = chessTable[row][i];
             if (charToCheck == 'q') {
                 return false;
             }
         }
 
-        for (int i = elem - 1; i >= 0; i--) {        //LeftHorizontal yes
+        for (int i = elem - 1; i >= 0; i--) { // LeftHorizontal yes
             char charToCheck = chessTable[row][i];
             if (charToCheck == 'q') {
                 return false;
             }
         }
 
-
-        for (int i = row + 1; i < chessTable.length; i++) {       //DownVertical yes
+        for (int i = row + 1; i < chessTable.length; i++) { // DownVertical yes
             char charToCheck = chessTable[i][elem];
             if (charToCheck == 'q') {
                 return false;
             }
         }
 
-        for (int i = row - 1; i >= 0; i--) {                  //UpVertical yes
+        for (int i = row - 1; i >= 0; i--) { // UpVertical yes
             char charToCheck = chessTable[i][elem];
             if (charToCheck == 'q') {
                 return false;
@@ -71,20 +67,17 @@ public class Find_The_Real_Queen_07 {
 
         int uldElement = elem - 1;
 
-        for (int i = row - 1; i >= 0 && uldElement >= 0; i--, uldElement--) {          //UpLeftDiagonal yes
+        for (int i = row - 1; i >= 0 && uldElement >= 0; i--, uldElement--) { // UpLeftDiagonal yes
             char charToCheck = chessTable[i][uldElement];
-
             if (charToCheck == 'q') {
                 return false;
             }
         }
 
-
         int urdElement = elem + 1;
 
-        for (int i = row - 1; i >= 0 && urdElement < chessTable[i].length; i--, urdElement++) {    //UpRightDiagonal yes
+        for (int i = row - 1; i >= 0 && urdElement < chessTable[i].length; i--, urdElement++) { // UpRightDiagonal yes
             char charToCheck = chessTable[i][urdElement];
-
             if (charToCheck == 'q') {
                 return false;
             }
@@ -93,9 +86,8 @@ public class Find_The_Real_Queen_07 {
 
         int element = elem - 1;
 
-        for (int i = row + 1; i < chessTable.length && element >= 0; i++, element--) {    //DownLeftDiagonal
+        for (int i = row + 1; i < chessTable.length && element >= 0; i++, element--) { // DownLeftDiagonal
             char charToCheck = chessTable[i][element];
-
             if (charToCheck == 'q') {
                 return false;
             }
@@ -112,6 +104,5 @@ public class Find_The_Real_Queen_07 {
 
         return true;
     }
-
 
 }
