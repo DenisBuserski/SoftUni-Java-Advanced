@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Multidimensional_Arrays_Lab;
+package Multidimensional_Arrays_Lab;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -28,14 +28,14 @@ public class Wrong_Measurements_08 {
         for (int[] updatedValue : updatedValues) {
             matrix[updatedValue[0]][updatedValue[1]] = updatedValue[2];
         }
+        
         printMatrix(matrix);
-
-
     }
 
     public static boolean isInBounds(int row, int col, int[][] matrix) {
         return row >= 0 && row < matrix.length && col >= 0 && col < matrix[row].length;
     }
+    
     public static boolean isOutOfBounds(int row, int col, int[][] matrix) {
         return !isInBounds(row, col, matrix);
     }
@@ -98,13 +98,11 @@ public class Wrong_Measurements_08 {
 
     private static int getElementsSum(int[][] matrix) {
         int sum = 0;
-
         for (int row = 0; row < matrix.length; row++) {
             for (int col = 0; col < matrix[row].length; col++) {
                 sum += matrix[row][col];
             }
         }
-
         return sum;
     }
 
@@ -126,11 +124,9 @@ public class Wrong_Measurements_08 {
         if (firstMatrix.length != secondMatrix.length) {
             return false;
         }
-
         for (int row = 0; row < firstMatrix.length; row++) {
             int[] firstArray = firstMatrix[row];
             int[] secondArray = secondMatrix[row];
-
             if (firstArray.length != secondArray.length) {
                 return false;
             }
@@ -141,7 +137,6 @@ public class Wrong_Measurements_08 {
                 }
             }
         }
-
         return true;
     }
 
@@ -167,4 +162,5 @@ public class Wrong_Measurements_08 {
                 .mapToInt(Integer::parseInt)
                 .toArray();
     }
+    
 }
