@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Multidimensional_Arrays_Lab;
+package Multidimensional_Arrays_Lab;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -28,7 +28,6 @@ public class Compare_Matrices_01 {
         if (firstMatrix.length != secondMatrix.length) {
             return false;
         }
-
         for (int row = 0; row < firstMatrix.length; row++) {
             int [] firstArray = firstMatrix[row];
             int [] secondArray = secondMatrix[row];
@@ -67,8 +66,5 @@ public class Compare_Matrices_01 {
                 .mapToInt(Integer::parseInt)
                 .toArray();
     }
-
-
-
 
 }
