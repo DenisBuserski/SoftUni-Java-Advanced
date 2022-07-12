@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Multidimensional_Arrays_Lab;
+package Multidimensional_Arrays_Lab;
 
 import java.util.Scanner;
 
@@ -7,23 +7,18 @@ public class Print_Diagonals_Of_Square_Matrix_06 {
         Scanner scanner = new Scanner(System.in);
 
         int size = Integer.parseInt(scanner.nextLine());
-
         int rows = size;
         int cols = size;
         int [][] matrix = new int[rows][cols];
         matrix = readMatrix(scanner, rows, matrix);
 
-
         first(size, matrix);
         second(size, matrix);
-
-
     }
 
     public static void second(int size, int[][] matrix) {
         for (int i = size; i >= 0; i--) {
             for (int j = 0; j <= size; j++) {
-
                 if (i + j + 1 == size) {
                     System.out.print(matrix[i][j] + " ");
                 }
@@ -52,6 +47,5 @@ public class Print_Diagonals_Of_Square_Matrix_06 {
         }
         return matrix;
     }
-
 
 }
