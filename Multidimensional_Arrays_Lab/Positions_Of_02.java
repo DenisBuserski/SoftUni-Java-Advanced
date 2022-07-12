@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Multidimensional_Arrays_Lab;
+package Multidimensional_Arrays_Lab;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -35,7 +35,6 @@ public class Positions_Of_02 {
             }
         }
 
-
     }
 
     private static boolean matricesAreEqual(int[][] firstMatrix, int[][] secondMatrix) {
@@ -46,7 +45,6 @@ public class Positions_Of_02 {
         for (int row = 0; row < firstMatrix.length; row++) {
             int[] firstArray = firstMatrix[row];
             int[] secondArray = secondMatrix[row];
-
             if (firstArray.length != secondArray.length) {
                 return false;
             }
@@ -57,7 +55,6 @@ public class Positions_Of_02 {
                 }
             }
         }
-
         return true;
     }
 
@@ -82,7 +79,6 @@ public class Positions_Of_02 {
         return Arrays.stream(line.split("\\s+"))
                 .mapToInt(Integer::parseInt)
                 .toArray();
-
-
     }
+    
 }
