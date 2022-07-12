@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Multidimensional_Arrays_Lab;
+package Multidimensional_Arrays_Lab;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -13,13 +13,9 @@ public class Maximum_Sum_Of_2x2_Submatrix_05 {
         int rows = rowsAndCols[0];
         int cols = rowsAndCols[1];
         int [][] matrix = readMatrix(rows, cols, scanner, ", ");
-
-
-
-       int[][] maxSubMatrix = getMaxSumSubMatrix2By2(matrix);
+        int[][] maxSubMatrix = getMaxSumSubMatrix2By2(matrix);
         printMatrix(maxSubMatrix);
         System.out.println(getElementsSum(maxSubMatrix));
-
     }
 
     public static  int[][] getMaxSumSubMatrix2By2(int[][] matrix) {
@@ -62,19 +58,16 @@ public class Maximum_Sum_Of_2x2_Submatrix_05 {
 
     private static int getElementsSum(int[][] matrix) {
         int sum = 0;
-
         for (int row = 0; row < matrix.length; row++) {
             for (int col = 0; col < matrix[row].length; col++) {
                 sum += matrix[row][col];
             }
         }
-
         return sum;
     }
 
     public static List<int[]> findNumberOccurrences(int[][] matrix, int number) {
         List<int[]> out = new ArrayList<>();
-
         for (int row = 0; row < matrix.length; row++) {
             for (int col = 0; col < matrix[row].length; col++) {
                 int current = matrix[row][col];
@@ -94,7 +87,6 @@ public class Maximum_Sum_Of_2x2_Submatrix_05 {
         for (int row = 0; row < firstMatrix.length; row++) {
             int[] firstArray = firstMatrix[row];
             int[] secondArray = secondMatrix[row];
-
             if (firstArray.length != secondArray.length) {
                 return false;
             }
@@ -105,7 +97,6 @@ public class Maximum_Sum_Of_2x2_Submatrix_05 {
                 }
             }
         }
-
         return true;
     }
 
@@ -130,9 +121,6 @@ public class Maximum_Sum_Of_2x2_Submatrix_05 {
         return Arrays.stream(line.split(pattern))
                 .mapToInt(Integer::parseInt)
                 .toArray();
-
-
     }
-
 
 }
