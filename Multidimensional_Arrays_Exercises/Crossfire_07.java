@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Multidimensional_Arrays_Exercises;
+package Multidimensional_Arrays_Exercises;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -10,8 +10,6 @@ public class Crossfire_07 {
         Scanner scanner = new Scanner(System.in);
 
         int[] dimensions = Arrays.stream(scanner.nextLine().split("\\s+")).mapToInt(Integer::parseInt).toArray();
-
-
         int rows = dimensions[0];
         int cols = dimensions[1];
 
@@ -29,7 +27,6 @@ public class Crossfire_07 {
         String line = scanner.nextLine();
         while (!line.equals("Nuke it from orbit")){
             String[] data = line.split(" ");
-
             int row = Integer.parseInt(data[0]);
             int col = Integer.parseInt(data[1]);
             int radius = Integer.parseInt(data[2]);
@@ -56,8 +53,6 @@ public class Crossfire_07 {
             }
             System.out.println();
         }
-
-
 
     }
 
