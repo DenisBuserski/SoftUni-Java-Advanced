@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Multidimensional_Arrays_Exercises;
+package Multidimensional_Arrays_Exercises;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -11,23 +11,19 @@ public class Matrix_Shuffling_05 {
         int rows = dimensions[0];
         int cols = dimensions[1];
 
-
         String[][] matrix = new String[rows][cols];
         fillMatrix(scanner, matrix, rows, cols);
 
         String command = scanner.nextLine();
         while(!command.equals("END")) {
-
             if(!validateCommand(command, rows, cols)) {
                 System.out.println("Invalid JavaOOP.input!");
             } else {
-
                 String [] tokens = command.split(" ");
                 int rowFirst = Integer.parseInt(tokens[1]);
                 int colFirst = Integer.parseInt(tokens[2]);
                 int rowSecond = Integer.parseInt(tokens[3]);
                 int colSecond =Integer.parseInt(tokens[4]);
-
                 String element1 = matrix[rowFirst][colFirst];
                 String element2 = matrix[rowSecond][colSecond];
 
@@ -49,8 +45,7 @@ public class Matrix_Shuffling_05 {
         if (!commandName.equals("swap")) {
             return false;
         }
-
-        if(tokens.length != 5) {
+        if (tokens.length != 5) {
             return false;
         }
 
@@ -63,7 +58,6 @@ public class Matrix_Shuffling_05 {
                 colFirst >= cols || rowSecond < 0 || rowSecond >= rows || colSecond < 0 || colSecond >= cols) {
             return false;
         }
-
         return true;
     }
 
@@ -81,4 +75,5 @@ public class Matrix_Shuffling_05 {
             System.out.println();
         }
     }
+    
 }
