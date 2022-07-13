@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Multidimensional_Arrays_Exercises;
+package Multidimensional_Arrays_Exercises;
 
 import java.util.Scanner;
 
@@ -7,17 +7,13 @@ public class Diagonal_Difference_03 {
         Scanner scanner = new Scanner(System.in);
 
         int size = Integer.parseInt(scanner.nextLine());
-
         int[][] matrix = new int[size][size];
-
         fillMatrix(scanner, matrix, size);
 
         int sumPrimary = getSymOfPrimamaryDiagonal(matrix, size);
         int sumSecondary = getSymOfSecondaryDiagonal(matrix, size);
 
         System.out.println(Math.abs(sumPrimary - sumSecondary));
-
-
     }
 
     private static int getSymOfSecondaryDiagonal(int[][] matrix, int size) {
@@ -60,4 +56,5 @@ public class Diagonal_Difference_03 {
             System.out.println();
         }
     }
+    
 }
