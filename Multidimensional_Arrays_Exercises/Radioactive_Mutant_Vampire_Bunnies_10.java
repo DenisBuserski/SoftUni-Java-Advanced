@@ -1,11 +1,10 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Multidimensional_Arrays_Exercises;
+package Multidimensional_Arrays_Exercises;
 
 import java.util.ArrayDeque;
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class Radioactive_Mutant_Vampire_Bunnies_10 {
-
     private static int[] playerPosition = new int[2];
     private static final int[] rowMovement = {1, -1, 0, 0};
     private static final int[] colMovement = {0, 0, 1, -1};
@@ -121,5 +120,5 @@ public class Radioactive_Mutant_Vampire_Bunnies_10 {
     private static boolean isInBounds(int row, int col, char[][] matrix) {
         return row >= 0 && row < matrix.length && col >= 0 && col < matrix[row].length;
     }
+    
 }
-
