@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Multidimensional_Arrays_Exercises;
+package Multidimensional_Arrays_Exercises;
 
 import java.util.Scanner;
 
@@ -38,8 +38,8 @@ public class Maximal_Sum_04 {
                 currentCol++;
                 newCols++;
                 startCol++;
-
             }
+            
             currentRow++;
             newRows++;
             startRow++;
@@ -48,14 +48,10 @@ public class Maximal_Sum_04 {
             newCols = 3;
         }
 
-
         System.out.println("Sum = " + maxSum);
         printMatrix(bestMatrix, 3, 3);
-
-
     }
-
-    
+   
     private static int[][] getBestMatrix(int[][] newMatrix, int maxSum, int [][] best) {
         int sum = 0;
         int max = 0;
@@ -77,7 +73,6 @@ public class Maximal_Sum_04 {
         } else {
             return best;
         }
-
 
     }
 
@@ -112,4 +107,5 @@ public class Maximal_Sum_04 {
             System.out.println();
         }
     }
+    
 }
