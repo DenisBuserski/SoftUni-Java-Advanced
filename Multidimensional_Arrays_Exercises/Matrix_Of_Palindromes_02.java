@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Multidimensional_Arrays_Exercises;
+package Multidimensional_Arrays_Exercises;
 
 import java.util.Scanner;
 
@@ -8,7 +8,6 @@ public class Matrix_Of_Palindromes_02 {
 
         int rows = scanner.nextInt();
         int cols = scanner.nextInt();
-
         String [][] matrix = new String[rows][cols];
 
         char startLetter = 'a';
@@ -32,4 +31,5 @@ public class Matrix_Of_Palindromes_02 {
             System.out.println();
         }
     }
+    
 }
