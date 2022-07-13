@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Multidimensional_Arrays_Exercises;
+package Multidimensional_Arrays_Exercises;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -40,9 +40,7 @@ public class String_Matrix_Rotation_06 {
         String regex = "([A-Za-z]+)(\\()([0-9]+)(\\))";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(rotationCommand);
-
         boolean matches = matcher.matches();
-
         int degrees = Integer.parseInt(matcher.group(3));
 
         while (degrees >= 360){
@@ -80,7 +78,7 @@ public class String_Matrix_Rotation_06 {
     private static void print(ArrayList<String> list, int length, char[][] matrix) {
         for (int r = 0; r < matrix.length; r++) {
             for (int c = 0; c < matrix[r].length; c++) {
-                if (matrix[r][c] == 0) { // You missed this condition!!!!!!!!!!!!!!!!!!!!!
+                if (matrix[r][c] == 0) { 
                     matrix[r][c] = ' ';
                 }
                 System.out.print(matrix[r][c]);
