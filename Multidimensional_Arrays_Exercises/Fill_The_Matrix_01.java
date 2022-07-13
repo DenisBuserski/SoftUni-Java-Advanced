@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Multidimensional_Arrays_Exercises;
+package Multidimensional_Arrays_Exercises;
 
 import java.util.Scanner;
 
@@ -20,8 +20,6 @@ public class Fill_The_Matrix_01 {
         }
 
         printMatrix(matrix, size, size);
-
-
     }
 
     private static void fillPatternB(int[][] matrix, int size) {
