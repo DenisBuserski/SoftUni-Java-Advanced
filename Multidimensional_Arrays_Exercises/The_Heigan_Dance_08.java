@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Multidimensional_Arrays_Exercises;
+package Multidimensional_Arrays_Exercises;
 
 import java.util.Scanner;
 
@@ -17,7 +17,6 @@ public class The_Heigan_Dance_08 {
 
         while (playerPoints > 0 && hsPoints > 0) {
             hsPoints -= damage;
-
             if (activeCloud) {
                 playerPoints -= 3500;
                 activeCloud = false;
