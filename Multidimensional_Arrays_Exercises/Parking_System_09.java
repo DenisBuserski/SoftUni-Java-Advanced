@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Multidimensional_Arrays_Exercises;
+package Multidimensional_Arrays_Exercises;
 
 import java.util.Scanner;
 
@@ -15,7 +15,6 @@ public class Parking_System_09 {
 
         while (true) {
             String input = scanner.nextLine();
-
             if (input.equals("stop")) {
                 break;
             }
@@ -67,7 +66,6 @@ public class Parking_System_09 {
             matrix[row][col] = true;
             distance += col;
             System.out.println(distance);
-
         }
     }
 
@@ -81,4 +79,3 @@ public class Parking_System_09 {
     }
 
 }
-
