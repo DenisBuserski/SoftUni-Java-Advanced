@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Multidimensional_Arrays_Exercises;
+package Multidimensional_Arrays_Exercises;
 
 import java.util.Scanner;
 
@@ -19,14 +19,11 @@ public class The_Matrix_12 {
         char firstSymbol = matrix[startRow][startCol];
         matrix[startRow][startCol] = fillChar;
 
-
         startCol(cols, matrix, fillChar, startRow, startCol, firstSymbol);
 
         rowsUpAndDown(rows, cols, matrix, fillChar, startRow, firstSymbol);
 
-
         printMatrix(matrix);
-
     }
 
     public static void rowsUpAndDown(int rows, int cols, Character[][] matrix, char fillChar, int startRow, char firstSymbol) {
@@ -50,9 +47,7 @@ public class The_Matrix_12 {
             }
             int rowDown = startRow - 1;
             for (int row = rowDown; row >= 0; row--) {
-
                 for (int col = 0; col < cols; col++) {
-
                     if (matrix[row][col] == firstSymbol && matrix[row + 1][col] == fillChar) {
                         matrix[row][col] = fillChar;
                     }
@@ -70,8 +65,7 @@ public class The_Matrix_12 {
                     break;
                 }
             }
-        }
-        else if (startCol > 0) {
+        } else if (startCol > 0) {
             for (int col = startCol; col < cols - 1; col++) {
                 if (matrix[startRow][col + 1] == firstSymbol) {
                     matrix[startRow][col + 1] = fillChar;
@@ -106,4 +100,5 @@ public class The_Matrix_12 {
             System.out.println();
         }
     }
+    
 }
