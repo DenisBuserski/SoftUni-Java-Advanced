@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Sets_And_Maps_Advanced_Lab;
+package Sets_And_Maps_Advanced_Lab;
 
 import java.util.Scanner;
 import java.util.Set;
@@ -37,8 +37,6 @@ public class SoftUni_Party_02 {
 
         printSetIfNotEmpty(vip);
         printSetIfNotEmpty(regular);
-
-
     }
 
     public static void printSetIfNotEmpty (Set<String> set) {
