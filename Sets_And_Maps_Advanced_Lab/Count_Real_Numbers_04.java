@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Sets_And_Maps_Advanced_Lab;
+package Sets_And_Maps_Advanced_Lab;
 
 import java.util.*;
 
@@ -11,7 +11,6 @@ public class Count_Real_Numbers_04 {
         Map<Double, Integer> values = new LinkedHashMap<>();
 
         for (double number : numbers) {
-
             if (!values.containsKey(number)) {
                 values.put(number, 1);
             } else {
@@ -22,7 +21,6 @@ public class Count_Real_Numbers_04 {
         for (Double key : values.keySet()) {
             System.out.println(String.format("%.1f -> %d", key, values.get(key)));
         }
-
 
     }
 }
