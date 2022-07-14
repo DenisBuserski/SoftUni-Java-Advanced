@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Sets_And_Maps_Advanced_Exercises;
+package Sets_And_Maps_Advanced_Exercises;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -14,7 +14,6 @@ public class A_Miner_Task_06 {
 
         while (!input.equals("stop")) {
             int resource = Integer.parseInt(scanner.nextLine());
-
             if (!resourceInfo.containsKey(input)) {
                 resourceInfo.put(input, resource);
             } else {
@@ -28,5 +27,6 @@ public class A_Miner_Task_06 {
             Integer value = entry.getValue();
             System.out.println(key + " -> " + value);
         }
+        
     }
 }
