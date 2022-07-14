@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Sets_And_Maps_Advanced_Lab;
+package Sets_And_Maps_Advanced_Lab;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -11,11 +11,9 @@ public class Voina_Number_Game_03 {
         LinkedHashSet<Integer> secondDeck = readDeck(scanner.nextLine());
 
         int rounds = 50;
-
         while (rounds-- > 0) {
             int firstCard = getFirst(firstDeck);
             int secondCard = getFirst(secondDeck);
-
             firstDeck.remove(firstCard);
             secondDeck.remove(secondCard);
 
@@ -30,7 +28,6 @@ public class Voina_Number_Game_03 {
             if (firstDeck.isEmpty() || secondDeck.isEmpty()) {
                 break;
             }
-
         }
 
         if (firstDeck.size() > secondDeck.size()) {
@@ -48,7 +45,6 @@ public class Voina_Number_Game_03 {
         Integer next = iterator.next();
         iterator.remove();
         return next;
-
     }
 
     private static LinkedHashSet<Integer> readDeck(String line) {
