@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Sets_And_Maps_Advanced_Lab;
+package Sets_And_Maps_Advanced_Lab;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -11,12 +11,12 @@ public class Academy_Graduation_08 {
         int numberOfStudents = Integer.parseInt(scanner.nextLine());
         Map<String, List<Double>> graduationList = new TreeMap<>();
 
-        IntStream.range(0, numberOfStudents).mapToObj(i -> scanner.nextLine())
-                .forEach(name -> graduationList.put(name, Arrays.stream(scanner.nextLine().split("\\s+"))
-                        .map(Double::parseDouble).collect(Collectors.toList())));
+        IntStream.range(0, numberOfStudents)
+            .mapToObj(i -> scanner.nextLine())
+            .forEach(name -> graduationList.put(name, Arrays.stream(scanner.nextLine().split("\\s+"))
+                                                .map(Double::parseDouble).collect(Collectors.toList())));
 
         graduationList.forEach((k, v) -> System.out.printf("%s is graduated with %s%n", k, getAverage(v)));
-
     }
 
     private static Double getAverage(List<Double> value) {
