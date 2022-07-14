@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Sets_And_Maps_Advanced_Lab;
+package Sets_And_Maps_Advanced_Lab;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -27,7 +27,6 @@ public class Product_Shop_06 {
             input = scanner.nextLine();
         }
 
-
         for (var entry : shopInformation.entrySet()) {
             String key = entry.getKey();
             LinkedHashMap<String, Double> productInfo = entry.getValue();
@@ -38,5 +37,6 @@ public class Product_Shop_06 {
                 System.out.printf("Price: %.1f%n", product.getValue());
             }
         }
+        
     }
 }
