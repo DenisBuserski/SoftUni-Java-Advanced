@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Sets_And_Maps_Advanced_Exercises;
+package Sets_And_Maps_Advanced_Exercises;
 
 import java.util.Collections;
 import java.util.Scanner;
@@ -17,7 +17,6 @@ public class Periodic_Table_03 {
 
             //elements.addAll(Arrays.asList(chemicalElements));
             Collections.addAll(elements, chemicalElements);
-
         }
 
         elements.stream().map(element -> element + " ").forEach(System.out::print);
