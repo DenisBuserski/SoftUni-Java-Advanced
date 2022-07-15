@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Sets_And_Maps_Advanced_Exercises;
+package Sets_And_Maps_Advanced_Exercises;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -13,7 +13,6 @@ public class Fix_Emails_07 {
         String name = scanner.nextLine();
         while (!name.equals("stop")) {
             String email = scanner.nextLine();
-
             if (!email.endsWith("us") && !email.endsWith("uk") && !email.endsWith("com")) {
                 emailsData.put(name, email);
             }
