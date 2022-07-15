@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Sets_And_Maps_Advanced_Exercises;
+package Sets_And_Maps_Advanced_Exercises;
 
 import java.util.*;
 
@@ -30,8 +30,6 @@ public class Hands_Of_Cards_08 {
             int points = getCardPoints(player.getValue());
             System.out.println(player.getKey() + ": " + points);
         }
-
-
     }
 
     private static int getCardPoints(Set<String> cards) {
@@ -50,13 +48,10 @@ public class Hands_Of_Cards_08 {
                 char number = card.charAt(0);
                 char strength = card.charAt(1);
                 points = pointsValues.get(strength) * pointsValues.get(number);
-
             }
             sum += points;
-
         }
         return sum;
-
     }
 
     private static Map<Character, Integer> getPointsValues() {
@@ -81,4 +76,5 @@ public class Hands_Of_Cards_08 {
 
         return points;
     }
+    
 }
