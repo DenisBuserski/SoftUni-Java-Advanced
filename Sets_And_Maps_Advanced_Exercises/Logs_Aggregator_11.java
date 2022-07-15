@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Sets_And_Maps_Advanced_Exercises;
+package Sets_And_Maps_Advanced_Exercises;
 
 import java.util.*;
 
@@ -24,8 +24,6 @@ public class Logs_Aggregator_11 {
                 newMinutes = IPs.get(ip);
             }
             IPs.put(ip, newMinutes + duration);
-
-
         }
 
         for (var user : users.entrySet()) {
@@ -40,7 +38,6 @@ public class Logs_Aggregator_11 {
             }
             System.out.print(finalTime + " [");
 
-
             int count = 1;
             for (var IP : IPs.entrySet()) {
                 String output =
@@ -50,7 +47,6 @@ public class Logs_Aggregator_11 {
             }
             System.out.printf("]%n");
         }
-
 
     }
 }
