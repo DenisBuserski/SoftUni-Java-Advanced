@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Sets_And_Maps_Advanced_Exercises;
+package Sets_And_Maps_Advanced_Exercises;
 
 import java.util.*;
 
@@ -26,7 +26,6 @@ public class Population_Counter_10 {
             input = scanner.nextLine();
         }
 
-
         List<Map.Entry<String, TreeMap<String, Long>>> sortList = new ArrayList<>();
 
         for (Map.Entry<String, TreeMap<String, Long>> country : countryInfo.entrySet()) {
@@ -37,16 +36,14 @@ public class Population_Counter_10 {
                 .compareTo(country1.getValue().values().stream().reduce(0L, Long::sum)));
 
         for (Map.Entry<String, TreeMap<String, Long>> country : sortList) {
-
             System.out.printf("%s (total population: %d)%n",
                     country.getKey(),country.getValue().values().stream().reduce(0L, Long::sum));
 
-            country.getValue().entrySet()
-                    .stream()
-                    .sorted((city1, city2) -> city2.getValue().compareTo(city1.getValue()))
-                    .forEach(city -> System.out.printf("=>%s: %d%n", city.getKey(), city.getValue()));
+            country.getValue()
+                .entrySet()
+                .stream()
+                .sorted((city1, city2) -> city2.getValue().compareTo(city1.getValue()))
+                .forEach(city -> System.out.printf("=>%s: %d%n", city.getKey(), city.getValue()));
         }
-
     }
-
 }
