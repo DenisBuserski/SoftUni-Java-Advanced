@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Sets_And_Maps_Advanced_Exercises;
+package Sets_And_Maps_Advanced_Exercises;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -11,7 +11,6 @@ public class Srubsko_Unleashed_13 {
         Scanner scanner = new Scanner(System.in);
 
         String input = scanner.nextLine();
-
         Map<String, LinkedHashMap<String, Integer>> singersInfo = new LinkedHashMap<>();
 
         while (!input.equals("End")) {
@@ -36,8 +35,6 @@ public class Srubsko_Unleashed_13 {
                 ticketsInfo.put(singer, newInput + totalPrice);
             }
 
-
-
             input = scanner.nextLine();
         }
 
@@ -50,13 +47,6 @@ public class Srubsko_Unleashed_13 {
                     result = a.getValue().compareTo(b.getValue());
                 return result;
             }).forEach(entry -> System.out.println("#  " + entry.getKey() + " -> " + entry.getValue()));
-
-
         });
-
-
-
-
-
     }
 }
