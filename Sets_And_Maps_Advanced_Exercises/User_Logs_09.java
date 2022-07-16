@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Sets_And_Maps_Advanced_Exercises;
+package Sets_And_Maps_Advanced_Exercises;
 
 import java.util.*;
 
@@ -20,7 +20,6 @@ public class User_Logs_09 {
             if (!messagesInfo.containsKey(user)) {
                 ipInfo.put(ip, 1);
             } else {
-
                 if (!ipInfo.containsKey(ip)) {
                     ipInfo.put(ip, 1);
                 } else {
@@ -41,12 +40,9 @@ public class User_Logs_09 {
 
             int count = 1;
             for (var innerMap : messageIP.entrySet()) {
-                String output =
-                        String.format(count < messageIP.entrySet().size() ? "%s => %d, " : "%s => %d.%n", innerMap.getKey(), innerMap.getValue());
+                String output = String.format(count < messageIP.entrySet().size() ? "%s => %d, " : "%s => %d.%n", innerMap.getKey(), innerMap.getValue());
                 System.out.printf("%s", output);
                 count++;
-
-
             }
         }
 
