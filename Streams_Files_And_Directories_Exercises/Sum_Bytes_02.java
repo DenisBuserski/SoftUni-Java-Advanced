@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Streams_Files_And_Directories_Exercises;
+package Streams_Files_And_Directories_Exercises;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -10,8 +10,7 @@ import java.util.List;
 public class Sum_Bytes_02 {
     public static void main(String[] args) {
 
-        Path path = Path.of
-                ("C:\\Users\\Acer\\Desktop\\SoftUni\\Advanced - Java\\04. Java-Advanced-Files-and-Streams-Exercises-Resources\\JavaOOP.input.txt");
+        Path path = Path.of("input.txt");
 
         List<String> lines = new ArrayList<>();
 
@@ -23,13 +22,12 @@ public class Sum_Bytes_02 {
             System.out.println("Another error with reading file");
         }
 
-
         int sumLines = 0;
         for (String line : lines) {
             sumLines += getSumAsciiLine(line);
         }
+        
         System.out.println(sumLines);
-
     }
 
     public static int getSumAsciiLine(String line) {
