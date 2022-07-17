@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Streams_Files_And_Directories_Exercises;
+package Streams_Files_And_Directories_Exercises;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -11,8 +11,7 @@ import java.util.List;
 public class ALL_CAPITALS_03 {
     public static void main(String[] args) {
 
-        Path path = Path.of
-                ("C:\\Users\\Acer\\Desktop\\SoftUni\\Advanced - Java\\04. Java-Advanced-Files-and-Streams-Exercises-Resources\\JavaOOP.input.txt");
+        Path path = Path.of("input.txt");
         List<String> lines = new ArrayList<>();
 
         try {
@@ -23,18 +22,14 @@ public class ALL_CAPITALS_03 {
 
         try {
             BufferedWriter writer = new BufferedWriter(new FileWriter("output.txt"));
-
             for (String line : lines) {
                 writer.write(line.toUpperCase());
                 writer.newLine();
             }
-
             writer.close();
-
         } catch (IOException e) {
             e.printStackTrace();
         }
-
 
     }
 
