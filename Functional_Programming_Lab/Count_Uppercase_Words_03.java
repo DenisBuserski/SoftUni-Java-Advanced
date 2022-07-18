@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Functional_Programming_Lab;
+package Functional_Programming_Lab;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -15,8 +15,6 @@ public class Count_Uppercase_Words_03 {
                 .toArray(String[]::new);
 
         System.out.println(words.length);
-
-        Arrays.stream(words)
-                .forEach(System.out::println);
+        Arrays.stream(words).forEach(System.out::println);
     }
 }
