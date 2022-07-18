@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Functional_Programming_Lab;
+package Functional_Programming_Lab;
 
 import java.util.Scanner;
 import java.util.function.Consumer;
@@ -22,7 +22,6 @@ public class Find_Evens_Or_Odds_06 {
                 .boxed()
                 .filter(filter)
                 .forEach(printer);
-
     }
 
     public static Predicate<Integer> getFilter(String oddOrEven) {
