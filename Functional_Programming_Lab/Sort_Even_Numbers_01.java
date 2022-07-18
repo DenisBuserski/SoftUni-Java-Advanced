@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Functional_Programming_Lab;
+package Functional_Programming_Lab;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -26,7 +26,5 @@ public class Sort_Even_Numbers_01 {
 
         String sortedNumbers = formatNumbers.apply(Arrays.stream(numbers).sorted());
         System.out.println(sortedNumbers);
-
-
     }
 }
