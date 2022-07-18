@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Functional_Programming_Lab;
+package Functional_Programming_Lab;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -30,7 +30,6 @@ public class Filter_By_Age_05 {
                 .stream()
                 .filter(getAgeFilter(age, ageCondition))
                 .forEach(getFormatter(format));
-
     }
 
     private static Predicate<Map.Entry<String, Integer>> getAgeFilter(int age, String ageCondition) {
@@ -38,18 +37,16 @@ public class Filter_By_Age_05 {
             return e -> e.getValue() >= age;
         }
         return e -> e.getValue() <= age;
-
     }
     
     public static Consumer<Map.Entry<String, Integer>> getFormatter(String format) {
-            if (format.equals("name")) {
-                return entry -> System.out.println(entry.getKey());
-            } else if (format.equals("age")) {
-                return entry -> System.out.println(entry.getValue());
-            } else {
-                return entry -> System.out.println(entry.getKey() + " - " + entry.getValue());
-            }
-
+        if (format.equals("name")) {
+            return entry -> System.out.println(entry.getKey());
+        } else if (format.equals("age")) {
+            return entry -> System.out.println(entry.getValue());
+        } else {
+            return entry -> System.out.println(entry.getKey() + " - " + entry.getValue());
+        }
     }
+    
 }
-
