@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Functional_Programming_Lab;
+package Functional_Programming_Lab;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -15,12 +15,6 @@ public class Add_VAT_04 {
         Arrays.stream(scanner.nextLine().split(", "))
                 .map(mapWithVat)
                 .forEach(e -> System.out.printf("%.2f%n", e));
-
-
-
-
-
-
-
+        
     }
 }
