@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Functional_Programming_Exercises;
+package Functional_Programming_Exercises;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -25,14 +25,5 @@ public class Reverse_And_Exclude_05 {
 
         Consumer<List<Integer>> print = list -> list.forEach(e -> System.out.print(e + " "));
         print.accept(numbers);
-
-
-
-
-
-
-
-
-
     }
 }
