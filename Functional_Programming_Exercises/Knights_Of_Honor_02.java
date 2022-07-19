@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Functional_Programming_Exercises;
+package Functional_Programming_Exercises;
 
 import java.util.Scanner;
 import java.util.function.Consumer;
@@ -15,5 +15,6 @@ public class Knights_Of_Honor_02 {
         for (String name : names) {
             printSir.accept(name);
         }
+        
     }
 }
