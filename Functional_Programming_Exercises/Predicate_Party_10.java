@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Functional_Programming_Exercises;
+package Functional_Programming_Exercises;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -34,11 +34,9 @@ public class Predicate_Party_10 {
             System.out.print(" are going to the party!");
         }
 
-
     }
 
     private static void addOrRemove(List<String> people, String commandName, String commandOption, String criteria, List<String> newPeople) {
-
         switch (commandName) {
             case "Remove":
                 switch (commandOption) {
@@ -70,7 +68,7 @@ public class Predicate_Party_10 {
                 people.addAll(newPeople);
                 newPeople.clear();
                 break;
-
         }
     }
+    
 }
