@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Functional_Programming_Exercises;
+package Functional_Programming_Exercises;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -14,13 +14,5 @@ public class Predicate_For_Names_06 {
         Predicate<String> checkLength = name -> name.length() <= length;
 
         Arrays.stream(names).filter(checkLength).forEach(System.out::println);
-
-
-
-
-
-
-
-
     }
 }
