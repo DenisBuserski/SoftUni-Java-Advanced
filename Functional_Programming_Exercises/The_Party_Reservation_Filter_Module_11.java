@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Functional_Programming_Exercises;
+package Functional_Programming_Exercises;
 
 import java.util.*;
 import java.util.function.Predicate;
@@ -92,4 +92,5 @@ public class The_Party_Reservation_Filter_Module_11 {
     private static Predicate<String> AddFilterLenght(Integer lenght) {               //Predicate to filter (Remouve)all with
         return e -> e.length()==lenght;                                              //given lenght
     }
+    
 }
