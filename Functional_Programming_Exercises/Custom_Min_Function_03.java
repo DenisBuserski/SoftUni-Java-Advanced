@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Functional_Programming_Exercises;
+package Functional_Programming_Exercises;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -16,7 +16,5 @@ public class Custom_Min_Function_03 {
         Consumer<int[]> getMin = array -> System.out.println(Arrays.stream(array).min().orElse(0));
 
         getMin.accept(numbers);
-
-
     }
 }
