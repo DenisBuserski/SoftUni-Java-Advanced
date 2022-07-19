@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Functional_Programming_Exercises;
+package Functional_Programming_Exercises;
 
 import java.util.Arrays;
 import java.util.List;
@@ -23,6 +23,5 @@ public class Find_The_Smallest_Element_07 {
         };
 
         printMinElement.accept(numbers);
-
     }
 }
