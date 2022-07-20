@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Defining_Classes_Lab.Car_Info_01;
+package Defining_Classes_Lab.Car_Info_01;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,8 +12,6 @@ public class Main {
 
         List<Car> cars = new ArrayList<>();
 
-
-
         while (n-- > 0) {
             String [] tokens = scanner.nextLine().split("\\s+");
             Car car = new Car(tokens[0], tokens[1], Integer.parseInt(tokens[2]));
@@ -21,8 +19,5 @@ public class Main {
         }
 
         cars.forEach(System.out::println);
-
-
-
     }
 }
