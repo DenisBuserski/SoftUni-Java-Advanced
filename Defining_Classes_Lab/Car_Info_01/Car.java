@@ -1,13 +1,11 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Defining_Classes_Lab.Car_Info_01;
+package Defining_Classes_Lab.Car_Info_01;
 
 public class Car {
-
     private String brand;
     private String model;
     private int horsePower;
 
     public Car(String token) {
-
     }
 
     public Car (String brand, String model, int horsePower) {
@@ -41,7 +39,6 @@ public class Car {
     }
 
     public boolean equals(Car other) {
-
         return this.brand.equals(other.brand)
                 && this.model.equals(other.model)
                 && this.horsePower == other.horsePower;
@@ -49,7 +46,7 @@ public class Car {
 
     @Override
     public String toString() {
-        return String.format("The car is: %s %s - %d HP.",
-                this.getBrand(), this.getModel(), this.getHorsePower());
+        return String.format("The car is: %s %s - %d HP.", this.getBrand(), this.getModel(), this.getHorsePower());
     }
+    
 }
