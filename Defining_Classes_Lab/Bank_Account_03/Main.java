@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Defining_Classes_Lab.Bank_Account_03;
+package Defining_Classes_Lab.Bank_Account_03;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -15,16 +15,13 @@ public class Main {
 
         while (!input.equals("End")) {
             String[] tokens = input.split("\\s+");
-
             String command = tokens[0];
-
             String output = null;
 
             if (command.equals("Create")) {
                 BankAccount bankAccount = new BankAccount();
                 accountsMap.put(bankAccount.getId(), bankAccount);
                 output = String.format("Account ID%d created", bankAccount.getId());
-
             } else if (command.equals("Deposit")) {
                 int id = Integer.parseInt(tokens[1]);
                 int amount = Integer.parseInt(tokens[2]);
@@ -33,10 +30,8 @@ public class Main {
                     b.deposit(amount);
                     return String.format("Deposited %d to ID%d", amount, id);
                 });
-
             } else if (command.equals("SetInterest")) {
                 BankAccount.setInterestRate(Double.parseDouble(tokens[1]));
-
             } else {
                 int id = Integer.parseInt(tokens[1]);
                 int years = Integer.parseInt(tokens[2]);
@@ -54,13 +49,13 @@ public class Main {
             input = scanner.nextLine();
         }
 
-
     }
+    
     public static String  executeIfNotNull(BankAccount account, Function<BankAccount, String> function) {
-
         if (account == null) {
             return "Account does not exist";
         }
         return function.apply(account);
     }
+    
 }
