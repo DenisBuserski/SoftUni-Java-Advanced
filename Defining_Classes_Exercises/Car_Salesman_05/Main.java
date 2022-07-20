@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Defining_Classes_Exercises.Car_Salesman_05;
+package Defining_Classes_Exercises.Car_Salesman_05;
 
 import java.util.*;
 
@@ -30,8 +30,6 @@ public class Main {
 
             Engine engine = new Engine(engineModel, enginePower, efficiency, displacement);
             engineData.put(engineModel, engine);
-
-
         }
 
         int m = Integer.parseInt(scanner.nextLine());
@@ -46,7 +44,6 @@ public class Main {
                 carWeight = carInput[2];
                 color = carInput[3];
             } else if (carInput.length == 3) {
-
                 if (!Character.isDigit(carInput[2].charAt(0))) {
                     color = carInput[2];
                 } else {
@@ -59,12 +56,9 @@ public class Main {
                 carData.add(car);
             }
 
-
         }
         for (int i = 0; i < carData.size(); i++) {
-
-        //Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exams.Java_Advanced_Exam_28_June_2020.Parking_03.Car car = carData.get(i);
-
+        // Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exams.Java_Advanced_Exam_28_June_2020.Parking_03.Car car = carData.get(i);
             System.out.println(carData.get(i).getCarModel() + ":");
             System.out.println(carData.get(i).getEngine().getEngineModel() + ":");
             System.out.println("Power: " + carData.get(i).getEngine().getPower());
@@ -73,7 +67,6 @@ public class Main {
             System.out.println("Weight: " + carData.get(i).getCarWeight());
             System.out.println("Color: " + carData.get(i).getColor());
         }
-
 
     }
 }
