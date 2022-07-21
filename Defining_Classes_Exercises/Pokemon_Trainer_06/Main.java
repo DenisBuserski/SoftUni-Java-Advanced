@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Defining_Classes_Exercises.Pokemon_Trainer_06;
+package Defining_Classes_Exercises.Pokemon_Trainer_06;
 
 import java.io.IOException;
 import java.util.LinkedHashMap;
@@ -18,17 +18,14 @@ public class Main {
             String pokemonName = data[1];
             String element = data[2];
             int health = Integer.parseInt(data[3]);
-
             Pokemon pokemon = new Pokemon(pokemonName, element, health);
 
             trainers.putIfAbsent(trainerName, new Trainer());
             trainers.get(trainerName).addPokemon(pokemon);
-
         }
 
         String command;
         while (!"End".equals(command = scanner.nextLine())) {
-
             for (Map.Entry<String, Trainer> kvp : trainers.entrySet()) {
                 if (kvp.getValue().pokeCollectionSize() > 0) {
                     boolean havePokemon = false;
@@ -45,6 +42,7 @@ public class Main {
                 }
             }
         }
+        
         trainers.entrySet().stream()
                 .sorted((b1, b2) -> Integer.compare(b2.getValue().getNumOfBadges(), b1.getValue().getNumOfBadges()))
                 .forEach(t -> {
