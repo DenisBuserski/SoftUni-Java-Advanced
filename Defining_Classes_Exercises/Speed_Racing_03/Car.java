@@ -1,7 +1,6 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Defining_Classes_Exercises.Speed_Racing_03;
+package Defining_Classes_Exercises.Speed_Racing_03;
 
 public class Car {
-
     private String model;
     private double fuelAmount;
     private double fuelCostFor1km;
@@ -26,7 +25,6 @@ public class Car {
         return distanceTraveled;
     }
 
-
     public void setDistanceTraveled(int distanceTraveled) {
         this.distanceTraveled = distanceTraveled;
     }
@@ -34,4 +32,5 @@ public class Car {
     public void setFuelAmount(double fuelAmount) {
         this.fuelAmount = fuelAmount;
     }
+    
 }
