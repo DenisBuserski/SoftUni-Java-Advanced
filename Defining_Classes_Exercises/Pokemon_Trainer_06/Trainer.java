@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Defining_Classes_Exercises.Pokemon_Trainer_06;
+package Defining_Classes_Exercises.Pokemon_Trainer_06;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,7 +6,6 @@ import java.util.function.UnaryOperator;
 import java.util.stream.Collectors;
 
 public class Trainer {
-
     private int numOfBadges;
     private List<Pokemon> pokemons;
 
@@ -26,6 +25,7 @@ public class Trainer {
     public List<Pokemon> getPokemons() {
         return new ArrayList<>(this.pokemons);
     }
+    
     public int pokeCollectionSize() {
         return this.pokemons.size();
     }
@@ -44,4 +44,5 @@ public class Trainer {
     public int getNumOfBadges() {
         return numOfBadges;
     }
+    
 }
