@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Defining_Classes_Exercises.Speed_Racing_03;
+package Defining_Classes_Exercises.Speed_Racing_03;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -22,22 +22,18 @@ public class Main {
             }
         }
 
-
         String command = scanner.nextLine();
         while (!command.equals("End")) {
             String[] tokens = command.split("\\s+");
             String carModel = tokens[1];
             int distanceTraveled = Integer.parseInt(tokens[2]);
-
             double neededFuel = distanceTraveled * carData.get(carModel).getFuelCostFor1km();
 
             if (neededFuel <= carData.get(carModel).getFuelAmount()) {
                 int traveledDistance = carData.get(carModel).getDistanceTraveled() + distanceTraveled;
                 double fuelLeft = carData.get(carModel).getFuelAmount() - neededFuel;
-
                 carData.get(carModel).setDistanceTraveled(traveledDistance);
                 carData.get(carModel).setFuelAmount(fuelLeft);
-
             } else {
                 System.out.printf("Insufficient fuel for the drive%n");
             }
@@ -51,9 +47,7 @@ public class Main {
             int distance = entry.getValue().getDistanceTraveled();
 
             System.out.printf("%s %.2f %d%n", car, fuel, distance);
-
         }
-
 
     }
 }
