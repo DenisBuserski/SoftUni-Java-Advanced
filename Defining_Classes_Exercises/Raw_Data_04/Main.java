@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Defining_Classes_Exercises.Raw_Data_04;
+package Defining_Classes_Exercises.Raw_Data_04;
 
 import java.util.*;
 
@@ -39,18 +39,13 @@ public class Main {
                     tyre2Pressure, tyre2Age,
                     tyre3Pressure, tyre3Age,
                     tyre4Pressure, tyre4Age);
-
             cars.get(model).setTyres(tyres);
-
-
         }
 
         String command = scanner.nextLine();
 
         for (Map.Entry<String, Car> entry : cars.entrySet()) {
-
             if (entry.getValue().getCargo().getCargoType().equals(command)) {
-
                 if (command.equals("fragile") &&
                         entry.getValue().getTyres().getTyre1Pressure() < 1 ||
                         entry.getValue().getTyres().getTyre2Pressure() < 1 ||
@@ -61,31 +56,8 @@ public class Main {
                         entry.getValue().getEngine().getEnginePower() > 250) {
                     System.out.println(entry.getKey());
                 }
-
             }
-
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     }
 }
