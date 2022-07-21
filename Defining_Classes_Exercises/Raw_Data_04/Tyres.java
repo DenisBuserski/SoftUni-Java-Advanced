@@ -1,7 +1,6 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Defining_Classes_Exercises.Raw_Data_04;
+package Defining_Classes_Exercises.Raw_Data_04;
 
 public class Tyres {
-
     private double tyre1Pressure;
     private int tyre1Age;
     private double tyre2Pressure;
@@ -10,7 +9,6 @@ public class Tyres {
     private int tyre3Age;
     private double tyre4Pressure;
     private int tyre4Age;
-
 
     public Tyres(double tyre1Pressure, int tyre1Age,
                  double tyre2Pressure, int tyre2Age,
@@ -41,4 +39,5 @@ public class Tyres {
     public double getTyre4Pressure() {
         return tyre4Pressure;
     }
+    
 }
