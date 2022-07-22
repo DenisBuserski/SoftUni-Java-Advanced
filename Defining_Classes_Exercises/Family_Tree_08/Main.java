@@ -1,5 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Defining_Classes_Exercises.Family_Tree_08;
-
+package Defining_Classes_Exercises.Family_Tree_08;
 
 import java.util.*;
 
@@ -14,12 +13,9 @@ public class Main {
 
         String inputInfo;
         while (!"End".equals(inputInfo = scanner.nextLine())) {
-
             if (inputInfo.matches(".*\\s+-\\s+.*")) {
-
                 String[] divided = inputInfo.split("\\s+-\\s+");
                 unsortedInfoList.add(new String[]{divided[0], divided[1]});
-
             } else {
                 String[] temp = inputInfo.split("\\s+");
                 String name = temp[0] + " " + temp[1];
@@ -31,6 +27,7 @@ public class Main {
                 }
             }
         }
+        
         sortFamilyTies();
         originPerson.printFamilyTree();
     }
@@ -56,4 +53,5 @@ public class Main {
             }
         }
     }
+    
 }
