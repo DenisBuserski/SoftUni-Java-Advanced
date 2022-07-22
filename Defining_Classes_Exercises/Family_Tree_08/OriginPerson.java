@@ -1,10 +1,9 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Defining_Classes_Exercises.Family_Tree_08;
+package Defining_Classes_Exercises.Family_Tree_08;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class OriginPerson {
-
     String name;
     String birthday;
     LinkedHashMap<String, String> childrenMap = new LinkedHashMap<>();
@@ -40,4 +39,5 @@ public class OriginPerson {
                 .append(date).append(System.lineSeparator()));
         System.out.printf("%s %s%nParents:%n%sChildren:%n%s", this.name, this.birthday, parents, children);
     }
+    
 }
