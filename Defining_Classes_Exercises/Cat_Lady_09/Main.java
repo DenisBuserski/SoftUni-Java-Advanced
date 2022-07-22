@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Defining_Classes_Exercises.Cat_Lady_09;
+package Defining_Classes_Exercises.Cat_Lady_09;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -23,13 +23,11 @@ public class Main {
                     String earSize = tokens[2];
                     cat = new Cat(catName, catType, earSize);
                     catData.put(catName, cat);
-
                     break;
                 case "Cymric":
                     String furLength = tokens[2];
                     cat = new Cat(catName, catType, furLength);
                     catData.put(catName, cat);
-
                     break;
                 case "StreetExtraordinaire":
                     String meowingDecibels = tokens[2];
@@ -44,19 +42,13 @@ public class Main {
         String name = scanner.nextLine();
 
         for (var entry : catData.entrySet()) {
-
             if (name.equals(entry.getKey())) {
                 String catName = entry.getKey();
                 String catType = entry.getValue().getCatType();
                 double thirdParameterToDouble = Double.parseDouble(entry.getValue().getThirdParameter());
-
-
                 System.out.printf("%s %s %.2f", catType, catName, thirdParameterToDouble);
-
             }
-
         }
-
 
     }
 }
