@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Defining_Classes_Exercises.Company_Roster_02;
+package Defining_Classes_Exercises.Company_Roster_02;
 
 import java.util.*;
 
@@ -23,10 +23,8 @@ public class Main {
                 String email = parameters[4];
                 int age = Integer.parseInt(parameters[5]);
                 employee = new Employee(name, salary, position, department, email, age);
-
             } else if (parameters.length == 5) {
                 String parameterForth = parameters[4];
-
                 if (parameterForth.contains("@")) {
                     String email = parameterForth;
                     employee = new Employee(name, salary, position, department, email);
@@ -46,7 +44,6 @@ public class Main {
             } else if (parameters.length == 4) {
                 employee = new Employee(name, salary, position, department);
             }
-
 
             if (!departments.containsKey(department)) {
                 departments.put(department, new Department(department));
@@ -69,6 +66,5 @@ public class Main {
                 .stream()
                 .sorted((e1, e2) -> Double.compare(e2.getSalary(), e1.getSalary()))
                 .forEach(employee -> System.out.println(employee.toString()));
-
     }
 }
