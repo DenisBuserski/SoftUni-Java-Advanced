@@ -1,12 +1,10 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Defining_Classes_Exercises.Company_Roster_02;
+package Defining_Classes_Exercises.Company_Roster_02;
 
 public class Employee {
-
     private String name;
     private double salary;
     private String position;
     private String department;
-
     private String email;
     private int age;
 
@@ -44,6 +42,5 @@ public class Employee {
         return String.format("%s %.2f %s %d", name, salary, email, age );
 
     }
-
 
 }
