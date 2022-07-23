@@ -1,9 +1,9 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Generics_Lab.Generics_Lab_List_Utilities_04;
+package Generics_Lab_List_Utilities_04;
 
 import java.util.Collections;
 import java.util.List;
 
-public class ListUtils {
+public class List_Utils {
 
     public static <T extends Comparable<T>> T getMin(List<T> list) {
         ensureNotEmpty(list);
@@ -20,10 +20,5 @@ public class ListUtils {
         ensureNotEmpty(list);
         return Collections.max(list);
     }
-
-
-
-
-
 
 }
