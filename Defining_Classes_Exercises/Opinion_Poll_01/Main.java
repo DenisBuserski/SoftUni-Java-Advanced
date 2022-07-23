@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Defining_Classes_Exercises.Opinion_Poll_01;
+package Defining_Classes_Exercises.Opinion_Poll_01;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -22,13 +22,9 @@ public class Main {
                 Person person = new Person(name, age);
                 people.add(person);
             }
-
         }
 
         people.sort(Comparator.comparing(Person::getName));
-
         people.stream().map(person -> person.getName() + " - " + person.getAge()).forEach(System.out::println);
-
-
     }
 }
