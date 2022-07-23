@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Generics_Lab.Generics_Lab_List_Utilities_04;
+package Generics_Lab.Generics_Lab_List_Utilities_04;
 
 import java.util.List;
 
@@ -7,10 +7,7 @@ public class Main {
 
         List<Integer> integers = List.of(13, 42, 73, 69, - 66);
 
-        System.out.println(ListUtils.getMin(integers));
-        System.out.println(ListUtils.getMax(integers));
-
-
-
+        System.out.println(List_Utils.getMin(integers));
+        System.out.println(List_Utils.getMax(integers));
     }
 }
