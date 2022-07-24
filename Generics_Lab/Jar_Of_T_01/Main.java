@@ -1,4 +1,4 @@
-package Generics_Lab.Generics_Lab_Jar_Of_T_01;
+package Generics_Lab.Jar_Of_T_01;
 
 public class Main {
     public static void main(String[] args) {
