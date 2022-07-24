@@ -1,10 +1,9 @@
-package GenericArray;
+package Generics_Lab.Generic_Array_Creator_02;
 
 import java.lang.reflect.Array;
 import java.util.stream.IntStream;
 
-public class ArrayCreator {
-
+public class Array_Creator {
 
     public static <T> T[] create(int length, T value) {
         return create(value.getClass(), length, value);
@@ -17,7 +16,5 @@ public class ArrayCreator {
         IntStream.range(0, length).forEach(i -> arr[i] = value);
         return arr;
     }
-
-
 
 }
