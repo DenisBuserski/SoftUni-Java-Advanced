@@ -1,0 +1,24 @@
+package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Generics_Exercises.Generics_Exercises_Custom_List_07;
+
+public class Sorter {
+
+    public static void sort(CustomList customList) {
+
+        int size = customList.getElements().size();
+
+        for (int index = 0; index < size; index++) {
+            String element = (String) customList.getElements().get(index);
+
+            for (int nextIndex = index + 1; nextIndex < size; nextIndex++) {
+                String nextElement = (String) customList.getElements().get(nextIndex);
+
+                if (element.compareTo(nextElement) > 0) {
+                    customList.swap(index, nextIndex);
+                }
+            }
+
+        }
+    }
+
+    
+}
