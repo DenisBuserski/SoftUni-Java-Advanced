@@ -1,4 +1,5 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Generics_Exercises.Generics_Exercises_Custom_List_07;
+package Generics_Exercises.Custom_List_07;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -60,8 +61,8 @@ public class CustomList<T extends Comparable<T>> implements Iterable<T> {
             @Override
             public T next() {
                 return elements.get(index++);
-
             }
         };
     }
+    
 }
