@@ -1,4 +1,5 @@
 package Generics_Exercises_Custom_List_07;
+
 import java.util.Scanner;
 
 public class Main {
