@@ -1,4 +1,5 @@
-package CustomList;
+package Generics_Exercises.Custom_List_Sorter_08;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -21,7 +22,6 @@ public class CustomList<T extends Comparable<T>> implements Iterable<T> {
     public T remove (int index) {
         return this.elements.remove(index);
     }
-
 
     public boolean contains(T element) {
         return this.elements.contains(element);
@@ -60,8 +60,8 @@ public class CustomList<T extends Comparable<T>> implements Iterable<T> {
             @Override
             public T next() {
                 return elements.get(index++);
-
             }
         };
     }
+    
 }
