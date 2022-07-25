@@ -1,4 +1,5 @@
-package CustomList;
+package Generics_Exercises.Custom_List_Sorter_08;
+
 import java.util.Scanner;
 
 public class Main {
@@ -49,6 +50,7 @@ public class Main {
                     Sorter.sort(customList);
                     break;
             }
+            
             command = scanner.nextLine();
         }
 
