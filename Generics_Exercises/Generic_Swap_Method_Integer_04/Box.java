@@ -1,10 +1,9 @@
-package Box;
+package Generics_Exercises.Generic_Swap_Method_Integer_04;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Box<T> {
-
     private List<T> elements;
 
     public Box() {
