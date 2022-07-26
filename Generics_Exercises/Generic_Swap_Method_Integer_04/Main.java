@@ -1,4 +1,4 @@
-package Box;
+package Generics_Exercises.Generic_Swap_Method_Integer_04;
 
 import java.util.Scanner;
 
@@ -21,6 +21,5 @@ public class Main {
         box.swap(swapIndex1, swapIndex2);
 
         System.out.println(box);
-
     }
 }
