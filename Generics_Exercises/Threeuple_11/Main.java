@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Generics_Exercises.Generics_Exercises_Threeuple_11;
+package Generics_Exercises.Threeuple_11;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +23,6 @@ public class Main {
         }
         System.out.print(sb.toString());
     }
-
 
     private static void readFirstThreeuples(Scanner scanner, List<Threeuple> threeples) {
         String[] tokens = scanner.nextLine().split("\\s+");
