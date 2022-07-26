@@ -1,10 +1,9 @@
-package Box;
+package Generics_Exercises.Generic_Count_Method_String_05;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Box<T extends Comparable<T> > {
-
     private List<T> elements;
 
     public Box() {
