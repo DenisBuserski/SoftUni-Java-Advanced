@@ -1,5 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Generics_Exercises.Generics_Exercises_Generic_Swap_Method_String_03;
-
+package Generics_Exercises.Generic_Swap_Method_String_03;
 
 import java.util.Scanner;
 
@@ -22,11 +21,8 @@ public class Main {
         int swapIndex2 = Integer.parseInt(indexes.split("\\s+")[1]);
         box.swap(swapIndex1, swapIndex2);
 
-        //Double element = Double.parseDouble(scanner.nextLine());
-
-
+        // Double element = Double.parseDouble(scanner.nextLine());
 
         System.out.println(box);
-
     }
 }
