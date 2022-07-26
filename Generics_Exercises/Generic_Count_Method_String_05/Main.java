@@ -1,4 +1,4 @@
-package Box;
+package Generics_Exercises.Generic_Count_Method_String_05;
 
 import java.util.Scanner;
 
@@ -19,12 +19,8 @@ public class Main {
 //        int swapIndex1 = Integer.parseInt(indexes.split("\\s+")[0]);
 //        int swapIndex2 = Integer.parseInt(indexes.split("\\s+")[1]);
 //        box.swap(swapIndex1, swapIndex2);
-
+        
         String element = scanner.nextLine();
-
-
-
         System.out.println(box.countGreaterThan(element));
-
     }
 }
