@@ -1,10 +1,9 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Generics_Exercises.Generics_Exercises_Generic_Swap_Method_String_03;
+package Generics_Exercises.Generic_Swap_Method_String_03;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Box<T extends Comparable<T> > {
-
     private List<T> elements;
 
     public Box() {
