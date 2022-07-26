@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Generics_Exercises.Generics_Exercises_Tuple_10;
+package Generics_Exercises.Tuple_10;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,10 +21,8 @@ public class Main {
         for (Tuple threeuple : tuples) {
             sb.append(threeuple).append(System.lineSeparator());
         }
-
         System.out.print(sb.toString());
     }
-
 
     private static void readFirstTuple(Scanner scanner, List<Tuple> tuples) {
         String[] tokens = scanner.nextLine().split("\\s+");
@@ -53,4 +51,5 @@ public class Main {
         Tuple<Integer, Double> thirdTuple = new Tuple<>(numInt, numDouble);
         tuples.add(thirdTuple);
     }
+    
 }
