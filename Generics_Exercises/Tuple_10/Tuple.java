@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Generics_Exercises.Generics_Exercises_Tuple_10;
+package Generics_Exercises.Tuple_10;
 
 public class Tuple<F, S> {
     private F item1;
@@ -30,4 +30,5 @@ public class Tuple<F, S> {
         StringBuilder sb = new StringBuilder();
         return sb.append(this.item1).append( " -> ").append(this.item2).toString();
     }
+    
 }
