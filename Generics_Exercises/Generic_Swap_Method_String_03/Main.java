@@ -11,7 +11,7 @@ public class Main {
         int n = Integer.parseInt(scanner.nextLine());
         for (int i = 0; i < n; i++) {
             String text = scanner.nextLine();
-            //double number = Double.parseDouble(scanner.nextLine());
+            // double number = Double.parseDouble(scanner.nextLine());
 
             box.add(text);
         }
