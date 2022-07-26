@@ -1,7 +1,6 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Generics_Exercises.Generics_Exercises_Threeuple_11;
+package Generics_Exercises.Threeuple_11;
 
 public class Threeuple<F, S, T> {
-
     private F item1;
     private S item2;
     private T item3;
@@ -37,4 +36,5 @@ public class Threeuple<F, S, T> {
         StringBuilder sb = new StringBuilder();
         return sb.append(this.item1).append( " -> ").append(this.item2).append( " -> ").append(this.item3).toString();
     }
+    
 }
