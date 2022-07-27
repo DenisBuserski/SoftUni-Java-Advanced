@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Iterators_And_Comparators_Lab.Book_01;
+package Iterators_And_Comparators_Lab.Book_01;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,4 +40,5 @@ public class Book {
     public List<String> getAuthors() {
         return authors;
     }
+    
 }
