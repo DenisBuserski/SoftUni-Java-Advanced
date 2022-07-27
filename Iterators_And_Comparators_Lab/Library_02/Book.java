@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Iterators_And_Comparators_Lab.Library_02;
+package Iterators_And_Comparators_Lab.Library_02;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,9 +17,11 @@ public class Book {
     private void setTitle(String title) {
         this.title = title;
     }
+    
     private void setYear(int year) {
         this.year = year;
     }
+    
     public void setAuthors(String... args) {
         this.authors = new ArrayList<>();
         for (String author : authors) {
@@ -30,10 +32,13 @@ public class Book {
     public String getTitle() {
         return title;
     }
+    
     public int getYear() {
         return year;
     }
+    
     public List<String> getAuthors() {
         return authors;
     }
+    
 }
