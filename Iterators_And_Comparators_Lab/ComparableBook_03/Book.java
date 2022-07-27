@@ -1,10 +1,9 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Iterators_And_Comparators_Lab.ComparableBook_03;
+package Iterators_And_Comparators_Lab.ComparableBook_03;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Book implements Comparable<Book> {
-
     private String title;
     private int year;
     private List<String> authors;
@@ -18,7 +17,6 @@ public class Book implements Comparable<Book> {
     @Override
     public int compareTo(Book other) {
         int result = this.title.compareTo(other.title);
-
         if (result == 0) {
             result =  Integer.compare(this.year, other.year);
         }
@@ -51,4 +49,5 @@ public class Book implements Comparable<Book> {
             this.authors.add(author);
         }
     }
+    
 }
