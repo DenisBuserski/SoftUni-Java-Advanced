@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Iterators_And_Comparators_Exercises.Stack_Iterator_03;
+package Iterators_And_Comparators_Exercises.Stack_Iterator_03;
 
 import java.util.Scanner;
 
@@ -11,10 +11,8 @@ public class Main {
 
         while (!command.equals("END")) {
             String[] tokens = command.split("[, ]+");
-
             switch (tokens[0]) {
                 case "Push":
-
                     for (int i = 1; i < tokens.length; i++) {
                         stack.push(Integer.parseInt(tokens[i]));
                     }
@@ -26,7 +24,6 @@ public class Main {
                         System.out.println("No elements");
                     }
                     break;
-
             }
 
             command = scanner.nextLine();
@@ -37,5 +34,6 @@ public class Main {
                 System.out.println(number);
             }
         }
+        
     }
 }
