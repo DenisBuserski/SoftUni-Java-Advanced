@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Iterators_And_Comparators_Exercises.Collection_02;
+package Iterators_And_Comparators_Exercises.Collection_02;
 
 import java.util.Iterator;
 import java.util.List;
@@ -75,4 +75,5 @@ public class ListyIterator implements Iterable<String> {
     public Spliterator<String> spliterator() {
         return null;
     }
+    
 }
