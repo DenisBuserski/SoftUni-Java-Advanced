@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Iterators_And_Comparators_Exercises.Comparing_Objects_05;
+package Iterators_And_Comparators_Exercises.Comparing_Objects_05;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,7 +14,6 @@ public class Main {
         while (!command.equals("END")) {
             String [] data = command.split("\\s+");
             Person person = new Person(data[0], Integer.parseInt(data[1]), data[2]);
-
             people.add(person);
 
             command = scanner.nextLine();
@@ -24,7 +23,6 @@ public class Main {
         Person searchedPerson = people.get(n - 1);
 
         int countEquals = 0;
-
         for (Person p : people) {
             if (searchedPerson.compareTo(p) == 0) {
                 countEquals++;
@@ -36,8 +34,6 @@ public class Main {
         } else {
             System.out.println(countEquals + " " + (people.size()  - countEquals) + " " + people.size());
         }
-
-
 
     }
 }
