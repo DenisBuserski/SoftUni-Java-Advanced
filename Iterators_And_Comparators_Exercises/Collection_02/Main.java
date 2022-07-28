@@ -1,5 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Iterators_And_Comparators_Exercises.Collection_02;
-
+package Iterators_And_Comparators_Exercises.Collection_02;
 
 import java.util.Arrays;
 import java.util.List;
@@ -18,7 +17,6 @@ public class Main {
 
         String command = scanner.nextLine();
         while (!command.equalsIgnoreCase("END")) {
-
             switch (command) {
                 case "Move":
                     System.out.println(listyIterator.move());
@@ -38,10 +36,8 @@ public class Main {
                     break;
             }
 
-
             command = scanner.nextLine();
         }
-
 
     }
 }
