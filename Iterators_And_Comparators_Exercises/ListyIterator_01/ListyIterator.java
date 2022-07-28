@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Iterators_And_Comparators_Exercises.ListyIterator_01;
+package Iterators_And_Comparators_Exercises.ListyIterator_01;
 
 import java.util.List;
 
@@ -16,14 +16,12 @@ public class ListyIterator {
         }
     }
 
-
     public boolean move() {
         if (this.index < this.data.size() - 1) {
             this.index++;
             return true;
         }
         return false;
-
     }
 
     public boolean hasNext() {
@@ -37,7 +35,5 @@ public class ListyIterator {
             throw new Exception("Invalid Operation!");
         }
     }
-
-
-
+    
 }
