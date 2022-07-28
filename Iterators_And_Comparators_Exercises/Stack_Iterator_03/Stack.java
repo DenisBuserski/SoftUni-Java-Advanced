@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exercises.Iterators_And_Comparators_Exercises.Stack_Iterator_03;
+package Iterators_And_Comparators_Exercises.Stack_Iterator_03;
 
 import java.util.Iterator;
 import java.util.Spliterator;
@@ -29,7 +29,6 @@ public class Stack<Integer> implements Iterable<Integer> {
         }
     }
 
-
     @Override
     public Iterator<Integer> iterator() {
         return new Iterator<Integer>() {
@@ -58,4 +57,5 @@ public class Stack<Integer> implements Iterable<Integer> {
     public Spliterator<Integer> spliterator() {
         return null;
     }
+    
 }
