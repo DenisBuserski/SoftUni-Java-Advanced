@@ -1,21 +1,18 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exams.Java_Advanced_Exam_20_February_2021.Car_Dealership_03;
+package Java_Advanced_Exam_20_February_2021.Car_Dealership_03;
 
 public class Main {
     public static void main(String[] args) {
 
-        // Initialize the repository
-        Dealership dealership = new Dealership("Autofest", 5);
+        Dealership dealership = new Dealership("Autofest", 5); // Initialize the repository
 
-        // Initialize entity
-        Car volvo = new Car("Volvo", "XC70", 2010);
+        Car volvo = new Car("Volvo", "XC70", 2010); // Initialize entity
 
         // Print Car
-        System.out.println(volvo); // Volvo XC70 (2010)
+        System.out.println(volvo); // Volvo XC70 (2010) 
 
-// Add Car
-        dealership.add(volvo);
+        dealership.add(volvo); // Add Car
 
-// Remove Car
+        // Remove Car
         System.out.println(dealership.buy("Volvo", "XC90")); // false
         System.out.println(dealership.buy("Volvo", "XC70")); // true
 
@@ -25,22 +22,18 @@ public class Main {
         dealership.add(peugeot);
         dealership.add(audi);
 
-// Get Latest Car
-        Car latestCar = dealership.getLatestCar();
+        Car latestCar = dealership.getLatestCar(); // Get Latest Car
         System.out.println(latestCar); // Peugeot 307 (2011)
 
-// Get Car
-        Car audiS4 = dealership.getCar("Audi", "S4");
+        Car audiS4 = dealership.getCar("Audi", "S4"); // Get Car
         System.out.println(audiS4); // Audi S4 (2005)
 
-// Count
+        // Count
         System.out.println(dealership.getCount()); // 2
 
-// Get Statistics
-        System.out.println(dealership.getStatistics());
-// The cars are in a car dealership Autofest:
-// Peugeot 307 (2011)
-// Audi S4 (2005)
-
+        System.out.println(dealership.getStatistics()); // Get Statistics
+        // The cars are in a car dealership Autofest:
+        // Peugeot 307 (2011)
+        // Audi S4 (2005)
     }
 }
