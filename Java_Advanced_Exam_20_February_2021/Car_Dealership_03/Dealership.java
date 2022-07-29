@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exams.Java_Advanced_Exam_20_February_2021.Car_Dealership_03;
+package Java_Advanced_Exam_20_February_2021.Car_Dealership_03;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -14,7 +14,6 @@ public class Dealership {
         this.capacity = capacity;
         this.data = new ArrayList<>();
     }
-
 
     public void add(Car car) {
         if (this.capacity > this.data.size()) {
@@ -61,7 +60,7 @@ public class Dealership {
         for (Car car : data) {
             out.append(car).append(System.lineSeparator());
         }
-
         return out.toString();
     }
+    
 }
