@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exams.Java_Advanced_Exam_20_February_2021;
+package Java_Advanced_Exam_20_February_2021;
 
 import java.util.ArrayDeque;
 import java.util.Arrays;
