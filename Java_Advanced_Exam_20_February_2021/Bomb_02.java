@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exams.Java_Advanced_Exam_20_February_2021;
+package Java_Advanced_Exam_20_February_2021;
 
 import java.util.Scanner;
 
@@ -89,4 +89,5 @@ public class Bomb_02 {
     private static boolean isOutOdBounds(int row, int col, String[][] matrix) {
         return row >= matrix.length || row < 0 || col >= matrix[row].length || col < 0;
     }
+    
 }
