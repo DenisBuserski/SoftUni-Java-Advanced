@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exams.Java_Advanced_Exam_20_February_2021.Car_Dealership_03;
+package Java_Advanced_Exam_20_February_2021.Car_Dealership_03;
 
 public class Car {
     private String manufacturer;
@@ -11,7 +11,7 @@ public class Car {
         this.year = year;
     }
 
-    //"{manufacturer} {model} ({year})"
+    // "{manufacturer} {model} ({year})"
     @Override
     public String toString() {
         return String.format("%s %s (%d)", this.manufacturer, this.model, this.year);
@@ -40,4 +40,5 @@ public class Car {
     public void setYear(int year) {
         this.year = year;
     }
+    
 }
