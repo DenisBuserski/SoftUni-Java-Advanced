@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exams.Java_Advanced_Exam_22_Feb_2020.Guild_03;
+package Java_Advanced_Exam_22_Feb_2020.Guild_03;
 
 import java.util.Scanner;
 
@@ -6,17 +6,17 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        //Initialize the repository (guild)
+        // Initialize the repository (guild)
         Guild guild = new Guild("Weekend Raiders", 20);
-        //Initialize entity
+        // Initialize entity
         Player player = new Player("Mark", "Rogue");
-        //Print player
+        // Print player
         System.out.println(player);
-        //Player Mark: Rogue
-        //Rank: Trial
-        //Description: n/a
+        // Player Mark: Rogue
+        // Rank: Trial
+        // Description: n/a
 
-        //Add player
+        // Add player
         guild.addPlayer(player);
         System.out.println(guild.count()); //1
         System.out.println(guild.removePlayer("Gosho")); //false
@@ -26,36 +26,34 @@ public class Main {
         Player thirdPlayer = new Player("Mike", "Rogue");
         Player fourthPlayer = new Player("Marlin", "Mage");
 
-        //Add description to player
+        // Add description to player
         secondPlayer.setDescription("Best healer EU");
 
-        //Add players
+        // Add players
         guild.addPlayer(firstPlayer);
         guild.addPlayer(secondPlayer);
         guild.addPlayer(thirdPlayer);
         guild.addPlayer(fourthPlayer);
 
-        //Promote player
+        // Promote player
         guild.promotePlayer("Lizzy");
 
-        //Remove Player
+        // Remove Player
         System.out.println(guild.removePlayer("Pep")); //true
 
         Player[] kickedPlayers = guild.kickPlayersByClass("Rogue");
         for (Player kickedPlayer : kickedPlayers) {
             System.out.print(kickedPlayer.getName() + " ");
         }
-        //Mark Mike
+        // Mark Mike
 
         System.out.println(guild.report());
-        //Players in the guild: Weekend Raiders:
-        //Player Lizzy: Priest
-        //Rank: Member
-        //Description: Best healer EU
-        //Player Marlin: Mage
-        //Rank: Trial
-        //Description: n/a
-
+        // Players in the guild: Weekend Raiders:
+        // Player Lizzy: Priest
+        // Rank: Member
+        // Description: Best healer EU
+        // Player Marlin: Mage
+        // Rank: Trial
+        // Description: n/a
     }
-
 }
