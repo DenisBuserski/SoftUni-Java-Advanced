@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exams.Java_Advanced_Exam_28_June_2020;
+package Java_Advanced_Exam_28_June_2020;
 
 import java.util.Scanner;
 
@@ -39,7 +39,6 @@ public class Snake_02 {
             if (!isInField) {
                 break;
             }
-
         }
 
         if (foodEaten >= 10) {
@@ -50,7 +49,6 @@ public class Snake_02 {
 
         System.out.println("Food eaten: " + foodEaten);
         System.out.println(getFieldString(field));
-
     }
 
     public static boolean moveSnake(char[][] field, int rowAddition, int colAddition) {
@@ -69,7 +67,6 @@ public class Snake_02 {
                             snakeCol = c;
                             field[snakeRow][snakeCol] = 'S';
                             return isInBounds;
-
                         }
                     }
                 }
@@ -86,7 +83,6 @@ public class Snake_02 {
         return r >= 0 && r < field.length && c >= 0 && c < field[r].length;
     }
 
-
     public static String getFieldString(char[][] matrix) {
         StringBuilder out = new StringBuilder();
         for (char[] arr : matrix) {
@@ -97,4 +93,5 @@ public class Snake_02 {
         }
         return out.toString();
     }
+    
 }
