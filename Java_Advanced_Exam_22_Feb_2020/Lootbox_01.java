@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exams.Java_Advanced_Exam_22_Feb_2020;
+package Java_Advanced_Exam_22_Feb_2020;
 
 import java.util.ArrayDeque;
 import java.util.Arrays;
@@ -22,7 +22,6 @@ public class Lootbox_01 {
         int itemValue = 0;
 
         while (!firstBox.isEmpty() && !secondBox.isEmpty()) {
-
             int firstItem = firstBox.peek();
             int secondItem = secondBox.pop();
             int sum = firstItem + secondItem;
@@ -33,8 +32,6 @@ public class Lootbox_01 {
             } else {
                 firstBox.offer(secondItem);
             }
-
-
         }
 
         if (firstBox.isEmpty()) {
@@ -48,7 +45,6 @@ public class Lootbox_01 {
         } else {
             System.out.println("Your loot was poor... Value: " + itemValue);
         }
-
 
     }
 }
