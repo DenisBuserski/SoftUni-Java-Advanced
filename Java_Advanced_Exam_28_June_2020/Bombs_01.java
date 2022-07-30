@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exams.Java_Advanced_Exam_28_June_2020;
+package Java_Advanced_Exam_28_June_2020;
 
 import java.util.ArrayDeque;
 import java.util.Arrays;
@@ -8,9 +8,9 @@ public class Bombs_01 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        //Datura Bombs: 40
-        //Cherry Bombs: 60
-        //Smoke Decoy Bombs: 120
+        // Datura Bombs: 40
+        // Cherry Bombs: 60
+        // Smoke Decoy Bombs: 120
 
         int daturaBomb = 0;
         int cherryBomb = 0;
@@ -45,8 +45,6 @@ public class Bombs_01 {
                 bombCasings.pop();
                 bombCasings.push(currentBomb);
             }
-
-
         }
 
         if (cherryBomb >= 3 && daturaBomb >= 3 && smokeBomb >= 3) {
@@ -67,12 +65,8 @@ public class Bombs_01 {
             System.out.println("Bomb Casings: empty");
         }
 
-
         System.out.println("Cherry Bombs: " + cherryBomb);
         System.out.println("Datura Bombs: " + daturaBomb);
         System.out.println("Smoke Decoy Bombs: " + smokeBomb);
-
-
-
     }
 }
