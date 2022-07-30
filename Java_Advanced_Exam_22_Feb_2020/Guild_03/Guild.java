@@ -1,11 +1,10 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exams.Java_Advanced_Exam_22_Feb_2020.Guild_03;
+package Java_Advanced_Exam_22_Feb_2020.Guild_03;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class Guild {
-
     private String name;
     private int capacity;
     private List<Player> roster;
@@ -16,14 +15,14 @@ public class Guild {
         this.roster = new ArrayList<>();
     }
 
-    //•	Method addPlayer(Player player) - adds an entity to the roster if there is room for it
+    // Method addPlayer(Player player) - adds an entity to the roster if there is room for it
     public void addPlayer(Player player){
         if(this.roster.size() < capacity){
             this.roster.add(player);
         }
     }
 
-    //•	Method removePlayer(String name) - removes a player by given name,
+    // Method removePlayer(String name) - removes a player by given name,
     // if such exists, and returns boolean
     public boolean removePlayer(String name){
         for (Player player : this.roster ) {
@@ -35,7 +34,7 @@ public class Guild {
         return false;
     }
 
-    //•	Method promotePlayer(String name) - promote (set his rank to "Member")
+    // Method promotePlayer(String name) - promote (set his rank to "Member")
     // the first player with the given name.
     // If the player is already a "Member", do nothing.
     public void promotePlayer(String name){
@@ -47,7 +46,7 @@ public class Guild {
         }
     }
 
-    //•	Method demotePlayer(String name)- demote (set his rank to "Trial")
+    // Method demotePlayer(String name)- demote (set his rank to "Trial")
     // the first player with the given name.
     // If the player is already a "Trial",  do nothing.
     public void demotePlayer(String name){
@@ -60,10 +59,9 @@ public class Guild {
     }
 
 
-    //•	Method kickPlayersByClass(String clazz) -
+    // Method kickPlayersByClass(String clazz) -
     // removes all the players by the given class
     // and returns all removed players from that class as an array
-
     public Player[] kickPlayersByClass(String clazz){
         Player[] kickedOnes = this.roster.stream()
                 .filter(player -> player.getClazz().equals(clazz))
@@ -73,15 +71,15 @@ public class Guild {
         return kickedOnes;
     }
 
-    //•	Method count() - returns the number of players
+    // Method count() - returns the number of players
     public int count(){
         return this.roster.size();
     }
 
-    //•	Method report() - returns a String in the following format:
-    //o	"Players in the guild: {guildName}:
-    //{Player1}
-    //{Player2}
+    // Method report() - returns a String in the following format:
+    // "Players in the guild: {guildName}:
+    // {Player1}
+    // {Player2}
     public String report(){
         StringBuilder fill = new StringBuilder();
         fill.append(String.format("Players in the guild: %s:", this.name))
@@ -91,10 +89,5 @@ public class Guild {
         }
         return fill.toString().trim();
     }
-
-
-
-
+    
 }
-
-
