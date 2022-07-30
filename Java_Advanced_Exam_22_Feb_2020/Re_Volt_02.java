@@ -1,4 +1,4 @@
-package JAVA_DEVELOPMENT_SOFTUNI.Java_Development.Java_Advanced.Java_Advanced_2.Java_Advanced_Exams.Java_Advanced_Exam_22_Feb_2020;
+package Java_Advanced_Exam_22_Feb_2020;
 
 import java.util.Scanner;
 
@@ -8,11 +8,8 @@ public class Re_Volt_02 {
 
         int size = Integer.parseInt(scanner.nextLine());
         int linesCount = Integer.parseInt(scanner.nextLine());
-
         char[][] matrix = new char[size][size];
-
         int[] position = new int[2];
-
 
         for (int row = 0; row < size; row++) {
             String line = scanner.nextLine();
@@ -25,7 +22,6 @@ public class Re_Volt_02 {
         }
 
         boolean playerWon = false;
-
         while (linesCount-- > 0 && !playerWon) {
             String command = scanner.nextLine();
 
@@ -38,10 +34,7 @@ public class Re_Volt_02 {
             } else if (command.equals("right")) {
                 playerWon = movePlayer(position, matrix, 0, 1);
             }
-
-
         }
-
 
         if (playerWon) {
             System.out.println("Player won!");
@@ -50,7 +43,6 @@ public class Re_Volt_02 {
         }
 
         printMatrix(matrix);
-
     }
 
     private static boolean movePlayer(int[] position, char[][] matrix, int rowModification, int colModification) {
@@ -58,7 +50,6 @@ public class Re_Volt_02 {
         int col = position[1];
         int newRow = ensureIndexIsInBounds(row + rowModification, matrix.length);
         int newCol = ensureIndexIsInBounds(col + colModification, matrix.length);
-
 
         boolean hasWon = false;
 
@@ -79,7 +70,6 @@ public class Re_Volt_02 {
         position[0] = newRow;
         position[1] = newCol;
         return hasWon;
-
     }
 
     private static int ensureIndexIsInBounds(int index, int bounds) {
@@ -99,4 +89,5 @@ public class Re_Volt_02 {
             System.out.println();
         }
     }
+    
 }
